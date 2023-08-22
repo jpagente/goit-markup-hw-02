@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #404BBF;
+    --p-color: #434455; 
+    --button-text-color-inactive : #404BBF;
+    --button-text-color-active : #fff; 
+    --button-background-color-click: #404BBF;
+    --background-color: #fff;
+    --highlight-color: #007bff;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+}
+
+button:hover{
+    cursor: pointer;
+    color: var(--button-text-color-active);
+    background-color: var(--button-background-color-click);
+}
+
+h2, h3, p, li {
+    font-family: inherit;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+p {
+    font-size: 16px;
+    color: var(--p-color);
+    line-height: 1.5em;
+}
+
+.portfolio-item-button {
+    font-size: 16px;
+    font-weight: 500;  
+    line-height: 1.5em; 
+    color: var(--button-text-color-inactive);
+}
+
+.address-list-item-link:hover {
+    cursor: pointer;
+    color: var(--button-text-color-active);
+    background-color: var(--button-background-color-click);
+}
