@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --text-color: #404BBF;
     --p-color: #434455; 
@@ -12,41 +11,160 @@
     --button-background-color-click: #404BBF;
     --background-color: #fff;
     --highlight-color: #007bff;
+    --address-color:#434455;
 }
 body{
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
 }
-
-button:hover{
-    cursor: pointer;
-    color: var(--button-text-color-active);
-    background-color: var(--button-background-color-click);
+a {
+    text-decoration: none;
 }
-
+ul {
+    list-style: none;
+}
 h2, h3, p, li {
     font-family: inherit;
+    margin-left: 30px;
 }
-h3{
+h3 {
+    color: var(--text-color);
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2em;
-}
-p {
-    font-size: 16px;
-    color: var(--p-color);
-    line-height: 1.5em;
-}
-
-.portfolio-item-button {
-    font-size: 16px;
-    font-weight: 500;  
-    line-height: 1.5em; 
-    color: var(--button-text-color-inactive);
-}
-
-.address-list-item-link:hover {
+    letter-spacing: 0.4px;
+    }
+    p {
+        font-size: 16px;
+        color: var(--p-color);
+        line-height: 1.5em;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.32px;
+    }
+    .portfolio-item-button {
+        font-size: 16px;
+        font-weight: 500;  
+        line-height: 1.5em; 
+        color: var(--button-text-color-inactive);
+    }
+    .portfolio-item-button:hover,
+    .portfolio-item-button:focus {
     cursor: pointer;
     color: var(--button-text-color-active);
     background-color: var(--button-background-color-click);
 }
+.active-button {
+    color: white;
+    border-radius: 4px;
+    background: var(--ocean, #404BBF);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+    cursor: pointer;
+    color: var(--button-text-color-active);
+    background-color: var(--button-background-color-click);
+}
+.nav-list-item-link {
+    color: var(--p-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+.address-list-item-link {
+    color: var(--address-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+.hero {
+    width: 1440px;
+    height: 370px;
+    flex-shrink: 0;
+    background: var(--navyblue, #2E2F42);
+    padding-top: 188px;
+}
+.hero > h1 {
+    color: var(--white, #fff);
+    text-align: center;
+    margin: 0;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07143em;
+    letter-spacing: 1.12px;
+}
+.hero > button {
+    display: inline-block;
+    padding: 16px 32px;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em; /* 150% */
+    letter-spacing: 0.64px;
+}
+.product > h2 {
+    text-align: center;
+}
+.team  > h2 {
+    text-align: center;
+}
+.team h3 {
+    text-align: center;
+}
+.team p {
+    text-align: center;
+}
+footer p {
+    text-align: left;
+}
+.footer-text {
+    color: var(--cloud, #F4F4FD);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      line-height: 1.5em; /* 150% */
+    letter-spacing: 0.32px;
+}
+footer {
+    width: 1440px;
+    height: 312px;
+    flex-shrink: 0;
+    background: var(--navyblue, #2E2F42);
+}
+.span-web {
+    color: var(--iris, #4D5AE5);
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.16667em; 
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.span-studio {
+    color: var(--cloud, #F4F4FD);
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.16667em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+
+
+
