@@ -35,7 +35,7 @@ address {
 --navy-blue-modal: #2E2F42;
 --grey :#2E2F42;
 --white :#FFFFFF;
---dairy :FCFCFC;
+--dairy :#FCFCFC;
 }
 .header {
     background-color: var(--white);
