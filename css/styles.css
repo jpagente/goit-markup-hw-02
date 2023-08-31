@@ -52,6 +52,12 @@ address {
     line-height: 1.5em;
     letter-spacing: 0.32px;
 }
+.nav-list-item-link:hover,
+.nav-list-item-link:focus,
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+    color: var(--ocean);
+}
 .address-list-item-link {
     color: var(--slate);
     font-size: 16px;
@@ -67,18 +73,12 @@ address {
 }
 .hero-heading {
     background: var(--navyblue);
-    margin: 0;
     color: var(--white);
-    /*text-align: center; */
     font-size: 56px;
     line-height: 1.07143em;
     letter-spacing: 1.12px;
 }
 .hero-cta {
-    /*display: inline-flex; 
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px; */
     border-radius: 4px;
     background: var(--iris);
     color: var(--white);
@@ -88,6 +88,9 @@ address {
     line-height: 1.5em;
     letter-spacing: 0.64px;
     padding: 16px 32px;
+}
+.hero-cta:hover{
+background-color: var(--ocean);
 }
 .feature {
     background-color: var(--white);
@@ -139,7 +142,7 @@ address {
 }
 .team-item-position {
     background-color: var(--white);
-    color: var(--slat);
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
@@ -189,12 +192,6 @@ address {
                             0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     color: var(--white);
     border-color: var(--ocean);
-}
-.address-list-item-link:hover,
-.address-list-item-link:focus {
-    cursor: pointer;
-    color: var(--white);
-    background-color: var(--ocean);
 }
 .footer-text {
     color: var(--cloud);
